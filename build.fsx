@@ -93,7 +93,7 @@ Target "Pack" (fun _ ->
         ("pack FsSql/FsSql.fsproj -c "+configuration + " -o ../bin " + (packParameters "FsSql.Core"))
 )
 
-Target "Push" (fun _ -> Paket.Push (fun p -> { p with WorkingDir = "bin" }))
+Target "Push" (fun _ -> Paket.Push (fun p -> { p with WorkingDir = "bin"; PublishUrl = "https://www.nuget.org" }))
 
 #load "paket-files/build/fsharp/FAKE/modules/Octokit/Octokit.fsx"
 Target "Release" (fun _ ->
