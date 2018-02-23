@@ -1,0 +1,2 @@
+#### 3.0.0 - 2018-02-23
+* Initial .NET Core 2 release

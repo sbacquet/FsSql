@@ -11,3 +11,6 @@ packages/*
 FsSql.userprefs
 *.exe
 *.sln.ide
+.fake/*
+paket.restore.cached
+paket-files/*

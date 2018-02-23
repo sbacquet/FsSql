@@ -1,0 +1,9 @@
+source https://api.nuget.org/v3/index.json
+storage:none
+
+nuget FSharp.Core 4.3.4
+
+group build
+  source https://api.nuget.org/v3/index.json
+  nuget FAKE
+  github fsharp/FAKE modules/Octokit/Octokit.fsx

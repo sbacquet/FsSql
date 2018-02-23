@@ -1,9 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <AssemblyName>FsSql</AssemblyName>
+    <PackageId>FsSql.Core</PackageId>
+    <Version>3.0.0</Version>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="FSharpTypeExtensions.fs" />
@@ -23,13 +24,10 @@
     <Compile Include="FsSqlOperators.fs" />
     <Compile Include="SqlWrapper.fs" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.4.2" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="4.3.0" />
   </ItemGroup>
-
 </Project>
