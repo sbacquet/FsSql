@@ -35,4 +35,4 @@ Logging.configure (fun () -> DateTime.UtcNow.Ticks)
                   (fun name -> new MyLogger(name))
 </code></pre>
 
-
+NuGet package: <code>paket add FsSql.Core</code>
